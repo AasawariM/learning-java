@@ -37,26 +37,53 @@ public class Loops {
             k++;
         } while (k <= 5);
 
-        //for loop
-        //initialization ; condition ; increment/decrement
-        for(int m = 1; m<=5; m++){
-            System.out.println("For Loop "+m);
+        // for loop
+        // initialization ; condition ; increment/decrement
+        for (int m = 1; m <= 5; m++) {
+            System.out.println("For Loop " + m);
         }
         System.out.println();
-        //in decrement order
-        for(int m = 5; m>=1; m--){
-            System.out.println("For Loop "+m);
+        // in decrement order i.e // for loop in reverse order
+        for (int m = 5; m >= 1; m--) {
+            System.out.println("For Loop " + m);
         }
-        //example printing day of week with working hours
-        for(int l=1;l<=5;l++){
-            System.out.println("Day "+l);
-            for(int n=1;n<=9;n++){
+        // example printing day of week with working hours
+        for (int l = 1; l <= 5; l++) {
+            System.out.println("Day " + l);
+            for (int n = 1; n <= 9; n++) {
                 System.out.println(
-                    "Hour: "+(n+8)+"-"+(n+9)
-                );
+                        "Hour: " + (n + 8) + "-" + (n + 9));
 
             }
         }
-        // In a for loop: first initialization, then condition check, then block execution, then increment/decrement.
+        // In a for loop: first initialization, then condition check, then block
+        // execution, then increment/decrement.
+
+        // break and continue statements
+
+        // break
+        // Used to exit the loop immediately, even if condition is still true.
+        // used for searching in arrays , stopping early
+        System.out.println();
+        for (int e = 1; e <= 5; e++) {
+
+            if (e == 3) {
+                break; // exit the loop completely
+            }
+            System.out.println("Hello World " + e);
+        }
+
+        // continue
+        // Used to skip ONLY the current iteration, Loop continues from next iteration.
+        // Used when you want to ignore some values.
+        // The loop doesn’t stop — only certain iterations are skipped.
+
+        for (int b = 1; b <= 10; b++) {
+            if (b % 2 == 0) {
+                continue; // skip even numbers
+            }
+            System.out.println(b);
+        }
+
     }
 }
