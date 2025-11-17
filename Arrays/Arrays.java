@@ -60,25 +60,41 @@ public class Arrays {
             // this prints a 2 dimensional array with all zero values
         }
 
-
-            System.out.println("--------------------assigning random elements to array------------------------");
-            // to assign random values to above nums array
-            // we use Math.random()
-            int min = 1;
-            int max = 10;
-            for (int k = 0; k < nums.length; k++) {
-                for (int j = 0; j < nums[k].length; j++) {
-                    nums[k][j] = (int) (Math.random() * (max - min + 1)) + min;
-                }
-            }
-
-            // here instead of 3 and 4 will write nums.length and nums[i].length
-
-            for (int k = 0; k < nums.length; k++) {
-                for (int j = 0; j < nums[k].length; j++) {
-                    System.out.print(nums[k][j] + " ");
-                }
-                System.out.println();
+        System.out.println("--------------------assigning random elements to array------------------------");
+        // to assign random values to above nums array
+        // we use Math.random()
+        int min = 1;
+        int max = 10;
+        for (int k = 0; k < nums.length; k++) {
+            for (int j = 0; j < nums[k].length; j++) {
+                nums[k][j] = (int) (Math.random() * (max - min + 1)) + min;
             }
         }
+
+        // here instead of 3 and 4 will write nums.length and nums[i].length
+
+        // printing array nums with random elements
+        for (int k = 0; k < nums.length; k++) {
+            for (int j = 0; j < nums[k].length; j++) {
+                System.out.print(nums[k][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+
+        // instead of using normal for loop for printing array we can use enhanced for loop
+
+        System.out.println("-------------Enhanced for Loop---------------");
+
+        for (int row[] : nums) // here n is not a simple variable it is an one dimensional array
+        {
+            for(int value: row){
+                System.out.print(value+" ");
+            }
+            System.out.println();
+
+        }
+
     }
+}
