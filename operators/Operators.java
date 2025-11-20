@@ -4,17 +4,20 @@ public class Operators {
         // arithmetic operators
         System.out.println("-------arithmetic operators-----------------");
         int a = 10;
-        int b = 20;
+        int b = 4;
         int result = a + b;
         int result1 = a - b;
         int result2 = a * b;
-        int result3 = a / b;
+        int result3 = a / b; //dividing whole number by whole number will result in whole number not actual quotient
+        // to get that we need to do type casting
+        double result3a = (double) a/b;
         int result4 = a % b;
 
         System.out.println(result);
         System.out.println(result1);
         System.out.println(result2);
         System.out.println(result3);
+        System.out.println(result3a);
         System.out.println(result4);
 
         // Unary Operators
